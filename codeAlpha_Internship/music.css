@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #111;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #200d0d;
+  color: #eee;
+}
+
+#playlist {
+  list-style-type: none;
+  padding: 0;
+}
+
+#playlist li {
+  margin: 5px;
+  cursor: pointer;
+}

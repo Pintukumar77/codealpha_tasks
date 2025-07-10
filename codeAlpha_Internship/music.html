@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="music.css"/>
+  <title>Web Music Player</title>
+</head>
+<body>
+  <div class="player-container">
+    <h1>🎵 My Music Player</h1>
+
+    <input type="file" id="fileUpload" multiple accept="audio/*" />
+    <button id="themeToggle">🌗 Toggle Theme</button>
+
+    <div id="audio-controls">
+      <button id="prev">⏮️</button>
+      <button id="playPause">▶️</button>
+      <button id="next">⏭️</button>
+      <input type="range" id="volume" min="0" max="1" step="0.01" />
+    </div>
+
+    <audio id="audioPlayer" controls hidden></audio>
+
+    <input type="text" id="searchInput" placeholder="Search by title or artist" />
+    
+    <ul id="playlist"></ul>
+  </div>
+
+  <script src="music.js"></script>
+</body>
+</html>
